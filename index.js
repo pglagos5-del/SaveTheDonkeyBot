@@ -42,5 +42,8 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port ${bot.onText(/\/start/, (msg) => {
+  bot.sendMessage(msg.chat.id, "🫏 SaveTheDonkeyBot is online and watching Solana! You’ll get alerts when new tokens are minted.");
 });
+
+
